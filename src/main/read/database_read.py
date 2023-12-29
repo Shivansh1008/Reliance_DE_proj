@@ -1,3 +1,4 @@
+
 class DatabaseReader:
     def __init__(self,url,properties):
         self.url = url
@@ -8,3 +9,4 @@ class DatabaseReader:
                              table=table_name,
                              properties=self.properties)
         return df
+

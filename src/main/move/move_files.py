@@ -10,7 +10,7 @@ def move_s3_to_s3(s3_client, bucket_name, source_prefix, destination_prefix):
             source_key = obj['Key']
             destination_key = destination_prefix + source_key[len(source_prefix):]
 
-            s3_client.copy_object(Bucket=bucket_name,
+            s3_client.meta.client.copy_object(Bucket=bucket_name,
                                   CopySource={'Bucket': bucket_name,
                                               'Key': source_key}, Key=destination_key)
 

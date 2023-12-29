@@ -9,7 +9,8 @@ class S3ClientProvider:
             aws_access_key_id=self.aws_access_key,
             aws_secret_access_key=self.aws_secret_key
         )
-        self.s3_client = self.session.client('s3')
+        self.s3_client = self.session.resource('s3')
 
     def get_client(self):
         return self.s3_client
+

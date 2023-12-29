@@ -5,3 +5,5 @@ boto3
 pyspark
 findspark
 mysql-connector-python
+
+##pip install -r /config/workspace/Manish_DE_proj/resources/dev/requirements.txt

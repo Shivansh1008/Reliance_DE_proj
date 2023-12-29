@@ -15,8 +15,11 @@ class S3FileDownloader:
             file_name = os.path.basename(key)
             logger.info("File name %s ",file_name)
             download_file_path = os.path.join(self.local_directory, file_name)
+            #print(download_file_path)
+
             try:
-                self.s3_client.download_file(self.bucket_name,key,download_file_path)
+                #self.s3_client.download_file(self.bucket_name,key,download_file_path)
+                self.s3_client.Bucket(self.bucket_name).download_file(Key=key,Filename=download_file_path)
             except Exception as e:
                 error_message = f"Error downloading file '{key}': {str(e)}"
                 traceback_message = traceback.format_exc()

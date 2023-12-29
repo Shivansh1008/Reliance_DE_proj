@@ -76,10 +76,10 @@ How to run the program in Pycharm:-
 7. If everything works as expected enjoy, else re-try.
 
 Project Architecture:-
-![Architecture](C:\Users\nikita\Pictures\Screenshots\architecture.png)
+![Architecture]/config/workspace/Reliance_DE_proj/docs/architecture.png
 
 Database ER Diagram:-
-![Architecture](C:\Users\nikita\Documents\data_engineering\pythonProject\youtube_project\docs\database_schema.drawio.png)
+![Architecture]/config/workspace/Reliance_DE_proj/docs/database_schema.drawio.png
 
 If you get stuck, don't forget to my watch my youtube channel project playlist for better understanding of the flow.
 My youtube channel link:- https://www.youtube.com/channel/UCacvJAgrPTjSEdnZObMzpqQ
